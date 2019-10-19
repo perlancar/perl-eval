@@ -7,7 +7,7 @@ sub import {
     my $class = shift;
     my $code = join ",", @_;
     return unless length $code;
-    print "eval.pm: Eval'ing: $code\n" if $ENV{DEBUG};
+    warn "eval.pm: Eval'ing: $code\n" if $ENV{DEBUG};
     eval $code;
     die if $@;
 }
