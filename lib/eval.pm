@@ -64,7 +64,7 @@ but you can do:
 
 To help you see what code is being eval'ed, set C<DEBUG> to true:
 
- % PERL5OPT='-Meval=$Carp::MaxArgLen=1000' script.pl
+ % DEBUG=1 PERL5OPT='-Meval=$Carp::MaxArgLen=1000' script.pl
  eval.pm: Eval'ing: $Carp::MaxArgLen=1000
 
 =back
